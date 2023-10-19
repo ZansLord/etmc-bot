@@ -10,12 +10,14 @@ COPY package*.json ./
 # Install application dependencies
 RUN npm install
 
+# Install nodemon globally
+RUN npm install -g nodemon
+
 # Copy the rest of the application code to the working directory
 COPY . .
 
 # Expose any necessary ports (if your application requires it)
-# EXPOSE 3000
+EXPOSE 3000
 
-# Define the command to start your application (use "rraf" script)
-CMD ["npm", "run", "rraf"]
- 
+# Define the command to start your application using nodemon
+CMD ["nodemon", "index.js"]
