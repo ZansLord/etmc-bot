@@ -2,7 +2,7 @@ const { Client, MessageMedia, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const admin = require('firebase-admin');
 const axios = require('axios');
-const serviceAccount = require('./etmc-whatsapp-bot.json');
+const serviceAccount = require(process.env.FIREBASE_CREDENTIALS); 
 require('dotenv').config();
 
 const client = new Client({
