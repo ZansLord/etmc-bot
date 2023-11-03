@@ -9,7 +9,7 @@
   "author": "rraf",
   "license": "ISC",
   "dependencies": {
-    "@tensorflow/tfjs-node": "^4.8.0",
+    "@tensorflow/tfjs-node": "^4.11.0",
     "axios": "^1.4.0",
     "dotenv": "^16.0.3",
     "firebase": "^9.22.0",
