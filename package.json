@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@tensorflow/tfjs-node": "^4.8.0",
-    "axios": "^1.4.0",
+    "axios": "^1.6.4",
     "dotenv": "^16.0.3",
     "firebase": "^9.22.0",
     "firebase-admin": "^11.8.0",
